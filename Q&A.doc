@@ -1,0 +1,10 @@
+Q&A: Detailed answers to the following questions:
+
+Q: What is the purpose of using multiple anchors per feature map cell?
+A: The purpose of using multiple anchors per feature map is to take into consideration/account the different shapes of object present in an image. For example, a car and human would need different anchor boxes shapes to correctly predict the bounding box.
+
+
+
+Q: Does this problem require multiple anchors? Please justify your answer.
+A: This problem does not require multiple anchor boxes. Because, in the dataset all the products are of similar shape and one anchor box is all we need to take into consideration all the object shapes present in the dataset. Therefore, after the careful quantitative analysis the average width to height ratio of "0.1/0.12" was found. And we use it for the width and height for each bounding box in all the feature maps.
+
